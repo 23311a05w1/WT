@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interactive Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Header</h1>
+</header>
+
+<main class="container">
+
+    <!-- Product List -->
+    <section class="products">
+        <h2>Product List</h2>
+
+        <div class="product">
+            <span>Product 1 - Rs 10</span>
+            <button onclick="addToCart(1)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <span>Product 2 - Rs 15</span>
+            <button onclick="addToCart(2)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <span>Product 3 - Rs 20</span>
+            <button onclick="addToCart(3)">Add to Cart</button>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <h3 id="totalPrice">Total Price: Rs 0</h3>
+    </section>
+
+</main>
+
+<footer>
+    <p>Footer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
