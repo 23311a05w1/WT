@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Regex Text Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Header</h1>
+</header>
+
+<main>
+    <div class="container">
+
+        <!-- User Input -->
+        <textarea id="inputText" placeholder="Enter your text here..."></textarea>
+
+        <div class="controls">
+            <label>
+                Search:
+                <input type="text" id="searchText" placeholder="Text to search">
+            </label>
+
+            <label>
+                Replace:
+                <input type="text" id="replaceText" placeholder="Replacement text">
+            </label>
+        </div>
+
+        <div class="buttons">
+            <button onclick="searchText()">Search</button>
+            <button onclick="replaceText()">Replace</button>
+            <button onclick="formatText()">Format</button>
+        </div>
+
+        <!-- Result -->
+        <div class="result">
+            <textarea id="resultText" placeholder="Result will appear here..." readonly></textarea>
+        </div>
+
+    </div>
+</main>
+
+<footer>
+    <p>Footer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
